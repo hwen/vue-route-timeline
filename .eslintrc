@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "html"
+  ],
+  "env": {
+    "jasmine": true
+  },
+  "globals": {
+    "document": false
+  }
+}
