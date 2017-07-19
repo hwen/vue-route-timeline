@@ -1,29 +1,47 @@
 <template>
-    <div id="app">
-        <navbar></navbar>
-        <router-view></router-view>
-    </div>
+    <v-app>
+        <v-navigation-drawer persistent v-model="drawer" dark enable-resize-watcher prominent>
+            <navbar></navbar>
+        </v-navigation-drawer>
+        <v-toolbar class="primary" dark>
+            <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+            <v-toolbar-title>Vue route timeline</v-toolbar-title>
+        </v-toolbar>
+        <main>
+            <v-container>
+                <router-view></router-view>
+            </v-container>
+        </main>
+        <v-footer></v-footer>
+    </v-app>
 </template>
 
 <script>
-  import Hello from './views/Hello.vue';
-  import Navbar from './components/Navbar.vue';
+  import Hello from './views/Hello.vue'
+  import Navbar from './components/Navbar.vue'
 
   export default {
     name: 'app',
+    data () {
+      return {
+        drawer: true,
+      }
+    },
     components: {
       Navbar,
       Hello,
     },
-  };
+  }
 </script>
 
-<style lang="scss">
-    @import '../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+<style lang="stylus">
+    @import '../node_modules/material-design-icons/iconfont/material-icons.css';
+    @import '../node_modules/vuetify/src/stylus/main';
 
-    .container {
-        max-width: 1140px;
-        padding: 20px;
-        margin: 0 auto;
+    code.block {
+        display: block
+        padding: 0 10px;
+        font-size: 1rem;
+        overflow: auto;
     }
 </style>
