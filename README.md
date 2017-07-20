@@ -14,8 +14,7 @@ For detailed explanation on how things work, checkout the [docs](https://disjfa.
 
 ## Instalation
 
-``` bash
-# install dependencies
+```
 npm install vue-route-timeline
 ```
 
@@ -23,10 +22,10 @@ npm install vue-route-timeline
 
 ```javascript
 import Vue from 'vue'; // Load vue
+import timeline from 'vue-route-timeline'; // Import timeline
 import App from './App'; // Load your app
 import router from './router'; // Add your router
 import store from './store'; // Build your vuex store
-import timeline from 'vue-route-timeline'; // Import timeline
 
 Vue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router
 

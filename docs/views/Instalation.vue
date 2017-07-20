@@ -9,10 +9,10 @@
         <h4 id="add-it">Add it to your project</h4>
         <code class="block">
             <pre>import Vue from 'vue'; // Load vue
+import timeline from 'vue-route-timeline'; // Import timeline
 import App from './App.vue'; // Load your app
 import router from './router'; // Add your router
 import store from './store'; // Build your vuex store
-import timeline from 'vue-route-timeline'; // Import timeline
 
 Vue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router
 
