@@ -44,7 +44,7 @@ this.$routeTimeline.set('Package name', this.item.title);
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars3.githubusercontent.com/u/632778?v=4" width="100px;"/><br /><sub>disjfa</sub>](http://www.disjfa.nl)<br />[💬](#question-disjfa "Answering Questions") [💻](https://github.com/disjfa/Vue route timeline/commits?author=disjfa "Code") [🎨](#design-disjfa "Design") [📖](https://github.com/disjfa/Vue route timeline/commits?author=disjfa "Documentation") [💡](#example-disjfa "Examples") |
+| [<img src="https://avatars3.githubusercontent.com/u/632778?v=4" width="100px;"/><br /><sub>disjfa</sub>](http://www.disjfa.nl)<br />[💬](#question-disjfa "Answering Questions") [💻](https://github.com/disjfa/vue-route-timeline/commits?author=disjfa "Code") [🎨](#design-disjfa "Design") [📖](https://github.com/disjfa/vue-route-timeline/commits?author=disjfa "Documentation") [💡](#example-disjfa "Examples") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
