@@ -1,24 +1,41 @@
-# vue-route-timeline
+# Vue route timeline
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-> A Vue.js project
+> Build a timeline clicking throug your application, using vue-router and vuex.
 
-## Build Setup
+## Instalation
 
 ``` bash
 # install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# lint all *.js and *.vue files
-npm run lint
-
-# run unit tests
-npm test
+npm install vue-route-timeline
 ```
 
-For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+## Usage
+```javascript
+import Vue from 'vue'; // Load vue
+import App from './App'; // Load your app
+import router from './router'; // Add your router
+import store from './store'; // Build your vuex store
+import timeline from 'vue-route-timeline'; // Import timeline
+
+Vue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router
+
+new Vue({
+  el: '#app',
+  router,
+  store,
+  render: h => h(App),
+});
+```
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars3.githubusercontent.com/u/632778?v=4" width="100px;"/><br /><sub>disjfa</sub>](http://www.disjfa.nl)<br />[💬](#question-disjfa "Answering Questions") [💻](https://github.com/disjfa/Vue route timeline/commits?author=disjfa "Code") [🎨](#design-disjfa "Design") [📖](https://github.com/disjfa/Vue route timeline/commits?author=disjfa "Documentation") [💡](#example-disjfa "Examples") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
