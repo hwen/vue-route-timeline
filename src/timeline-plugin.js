@@ -10,6 +10,12 @@ timelinePlugin.install = function install(Vue, store, router, moduleName = 'time
     Vue.component(`${key}`, Components[key]);
   });
 
+  Vue.filter('timelineDate', function(value) {
+    if (value) {
+      return value.toLocaleString();
+    }
+  });
+
   const setRoute = (title, subtitle = '') => {
     store.dispatch(`${moduleName}/addTimelineItem`, {
       title,

@@ -70,7 +70,7 @@ new Vue({
   export default {
     name: 'instalation',
     mounted() {
-      this.$routeTimeline.set('Instalation', 'We checked out how to install, cool!');
+      this.$routeTimeline.set('Get started', 'We checked out how to install, cool!');
     },
   };
 </script>

@@ -1,10 +1,10 @@
 <template>
-    <div class="route-timeline">
+    <div class="timeline">
         <slot v-for="item in items" :title="item.title" :subtitle="item.subtitle" :created="item.created" :route="item.route" name="item">
-            <router-link :to="item.route" class="route-timeline-item">
-                <h4>{{ item.title }}</h4>
-                <h5>{{ item.subtitle }}</h5>
-                {{ item.created }}
+            <router-link :to="item.route" class="timeline-item">
+                <h5 class="timeline-title">{{ item.title }}</h5>
+                <div class="timeline-title">{{ item.subtitle }}</div>
+                <div class="timeline-date">{{ item.created | timelineDate }}</div>
             </router-link>
         </slot>
     </div>

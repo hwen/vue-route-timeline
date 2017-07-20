@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Hello from './../views/Hello';
 import Instalation from './../views/Instalation';
 import Docs from './../views/Docs';
+import Customize from './../views/Customize';
 
 Vue.use(Router);
 
@@ -11,6 +12,7 @@ const routes = [
     path: '/hello',
     name: 'hello',
     title: 'Hello',
+    subtitle: 'Vue route timeline',
     icon: 'home',
     component: Hello,
   },
@@ -18,14 +20,24 @@ const routes = [
     path: '/instalation',
     name: 'instalation',
     title: 'Get started',
-    icon: 'publish',
+    subtitle: 'Lets do this',
+    icon: 'map-signs',
     component: Instalation,
+  },
+  {
+    path: '/customize',
+    name: 'customize',
+    title: 'Customize',
+    subtitle: 'Lets change this',
+    icon: 'pencil',
+    component: Customize,
   },
   {
     path: '/docs',
     name: 'docs',
     title: 'Documentation',
-    icon: 'rowing',
+    subtitle: 'Check it out',
+    icon: 'code',
     component: Docs,
   },
   {

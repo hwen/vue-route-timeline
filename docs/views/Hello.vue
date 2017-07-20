@@ -25,6 +25,8 @@
                                     {{ props.title }}
                                 </v-list-tile-title>
                                 <v-list-tile-sub-title>
+                                    {{ props.created | timelineDate }}
+                                    -
                                     {{ props.subtitle }}
                                 </v-list-tile-sub-title>
                             </v-list-tile-content>

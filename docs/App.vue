@@ -6,6 +6,10 @@
         <v-toolbar class="primary" dark>
             <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
             <v-toolbar-title>Vue route timeline</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn icon href="https://github.com/disjfa/vue-route-timeline">
+                <v-icon fa>github</v-icon>
+            </v-btn>
         </v-toolbar>
         <main>
             <v-container>
@@ -17,7 +21,6 @@
 </template>
 
 <script>
-  import Hello from './views/Hello';
   import Navbar from './components/Navbar';
 
   export default {
@@ -29,7 +32,6 @@
     },
     components: {
       Navbar,
-      Hello,
     },
   };
 </script>
