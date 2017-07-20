@@ -3,6 +3,8 @@
 
 > Build a timeline clicking throug your application, using vue-router and vuex.
 
+For detailed explanation on how things work, checkout the [docs](https://disjfa.github.io/vue-route-timeline/#/hello).
+
 ## Instalation
 
 ``` bash
@@ -10,7 +12,8 @@
 npm install vue-route-timeline
 ```
 
-## Usage
+## Getting started
+
 ```javascript
 import Vue from 'vue'; // Load vue
 import App from './App'; // Load your app
@@ -27,7 +30,14 @@ new Vue({
   render: h => h(App),
 });
 ```
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Usage
+
+Add an item whenever you like, it will store the current route:
+
+```javascript
+this.$routeTimeline.set('Package name', this.item.title);
+```
 
 ## Contributors
 

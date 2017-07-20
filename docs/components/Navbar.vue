@@ -5,7 +5,7 @@
             <v-subheader>
                 <h4 class="white--text">Menu</h4>
             </v-subheader>
-            <v-list-tile v-for="route in routes" :to="route">
+            <v-list-tile v-for="route in routes" :to="route" :key="route.name">
                 <v-list-tile-action>
                     <v-icon>{{ route.icon }}</v-icon>
                 </v-list-tile-action>
@@ -23,16 +23,16 @@
   export default {
     name: 'navbar',
     computed: {
-      routes () {
-        const routes = []
+      routes() {
+        const routes = [];
         Object.keys(this.$router.options.routes).forEach((key) => {
-          const route = this.$router.options.routes[key]
+          const route = this.$router.options.routes[key];
           if (route.title) {
-            routes.push(route)
+            routes.push(route);
           }
-        })
-        return routes
+        });
+        return routes;
       },
     },
-  }
+  };
 </script>

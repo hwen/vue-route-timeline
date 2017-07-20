@@ -39,10 +39,10 @@
 <script>
   export default {
     name: 'hello',
-    mounted () {
-      this.$routeTimeline.set('Hello', 'We clicked on hello')
+    mounted() {
+      this.$routeTimeline.set('Hello', 'We clicked on hello');
     },
-  }
+  };
 </script>
 
 <style scoped>

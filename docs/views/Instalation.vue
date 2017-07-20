@@ -69,10 +69,10 @@ new Vue({
 <script>
   export default {
     name: 'instalation',
-    mounted () {
-      this.$routeTimeline.set('Instalation', 'We checked out how to install, cool!')
+    mounted() {
+      this.$routeTimeline.set('Instalation', 'We checked out how to install, cool!');
     },
-  }
+  };
 </script>
 
 <style scoped>

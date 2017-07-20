@@ -17,29 +17,28 @@
 </template>
 
 <script>
-  import Hello from './views/Hello.vue'
-  import Navbar from './components/Navbar.vue'
+  import Hello from './views/Hello';
+  import Navbar from './components/Navbar';
 
   export default {
     name: 'app',
-    data () {
+    data() {
       return {
         drawer: true,
-      }
+      };
     },
     components: {
       Navbar,
       Hello,
     },
-  }
+  };
 </script>
 
 <style lang="stylus">
-    @import '../node_modules/material-design-icons/iconfont/material-icons.css';
     @import '../node_modules/vuetify/src/stylus/main';
 
     code.block {
-        display: block
+        display: block;
         padding: 0 10px;
         font-size: 1rem;
         overflow: auto;
