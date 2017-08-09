@@ -1,11 +1,8 @@
-import Vue from 'vue';
 import Router from 'vue-router';
 import Hello from './../views/Hello';
 import Instalation from './../views/Instalation';
 import Docs from './../views/Docs';
 import Customize from './../views/Customize';
-
-Vue.use(Router);
 
 const routes = [
   {
