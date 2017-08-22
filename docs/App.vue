@@ -3,7 +3,7 @@
         <v-navigation-drawer persistent v-model="drawer" dark enable-resize-watcher prominent>
             <navbar></navbar>
         </v-navigation-drawer>
-        <v-toolbar class="primary" dark>
+        <v-toolbar class="purple" dark>
             <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
             <v-toolbar-title>Vue route timeline</v-toolbar-title>
             <v-spacer></v-spacer>
@@ -43,5 +43,9 @@
         padding: 0 10px;
         font-size: 1rem;
         overflow: auto;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
     }
 </style>

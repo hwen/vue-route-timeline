@@ -1,4 +1,9 @@
 <template>
+<div>
+    <div class="text-center">
+        <img src="static/logo.png" alt="" style="max-width: 200px; height: auto;">
+    </div>
+
     <div class="container">
         <h2>Vue route timeline</h2>
         <p>Why are we building a timeline, i heard about a timeline feature on the internet and got excited. That project did't come together so i wanted to make something using <a href="https://vuejs.org/">Vue.js</a>, <a href="https://vuex.vuejs.org/">vuex</a> and <a href="https://router.vuejs.org/">vue-router</a>.</p>
@@ -36,6 +41,7 @@
             </v-list>
         </v-card>
     </div>
+</div>
 </template>
 
 <script>
