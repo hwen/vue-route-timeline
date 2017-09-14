@@ -4,11 +4,11 @@
             <navbar></navbar>
         </v-navigation-drawer>
         <v-toolbar class="purple" dark>
-            <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+            <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
             <v-toolbar-title>Vue route timeline</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon href="https://github.com/disjfa/vue-route-timeline">
-                <v-icon fa>github</v-icon>
+                <v-icon>fa-github</v-icon>
             </v-btn>
         </v-toolbar>
         <main>
@@ -37,6 +37,7 @@
 
 <style lang="stylus">
     @import '../node_modules/vuetify/src/stylus/main';
+    @import '../src/style/vue-route-timeline.scss';
 
     code.block {
         display: block;

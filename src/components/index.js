@@ -1,4 +1,4 @@
-import RouteTimeline from './RouteTimeline.vue';
+import RouteTimeline from './RouteTimeline';
 
 export default {
   RouteTimeline,

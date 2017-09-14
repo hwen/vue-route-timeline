@@ -10,15 +10,15 @@ const routes = [
     name: 'hello',
     title: 'Hello',
     subtitle: 'Vue route timeline',
-    icon: 'home',
+    icon: 'fa-home',
     component: Hello,
   },
   {
-    path: '/instalation',
-    name: 'instalation',
+    path: '/installation',
+    name: 'installation',
     title: 'Get started',
     subtitle: 'Lets do this',
-    icon: 'map-signs',
+    icon: 'fa-map-signs',
     component: Instalation,
   },
   {
@@ -26,7 +26,7 @@ const routes = [
     name: 'customize',
     title: 'Customize',
     subtitle: 'Lets change this',
-    icon: 'pencil',
+    icon: 'fa-pencil',
     component: Customize,
   },
   {
@@ -34,7 +34,7 @@ const routes = [
     name: 'docs',
     title: 'Documentation',
     subtitle: 'Check it out',
-    icon: 'code',
+    icon: 'fa-code',
     component: Docs,
   },
   {

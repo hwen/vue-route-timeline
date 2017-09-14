@@ -3,17 +3,19 @@ import Components from './components';
 
 const timelinePlugin = {};
 
-timelinePlugin.install = function install(Vue, store, router, moduleName = 'timeline') {
+timelinePlugin.install = function install(Vue, options, moduleName = 'timeline') {
+  const { store, router } = options;
   store.registerModule(moduleName, timelineStore);
 
   Object.keys(Components).forEach((key) => {
     Vue.component(`${key}`, Components[key]);
   });
 
-  Vue.filter('timelineDate', function(value) {
+  Vue.filter('timelineDate', (value) => {
     if (value) {
       return value.toLocaleString();
     }
+    return '';
   });
 
   const setRoute = (title, subtitle = '') => {

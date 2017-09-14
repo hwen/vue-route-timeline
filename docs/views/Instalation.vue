@@ -14,7 +14,7 @@ import App from './App.vue'; // Load your app
 import router from './router'; // Add your router
 import store from './store'; // Build your vuex store
 
-Vue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router
+Vue.use(timeline.plugin, {store, router}); // Connect timeline to vue, store and router
 
 new Vue({
   el: '#app',
@@ -61,6 +61,13 @@ new Vue({
 &lt;/template&gt;</pre>
         </code>
         <br>
+        <h4 id="css">Add some css</h4>
+        <p>I also have a small scss file in the style folder, you can include this.</p>
+        <code class="block">
+            <pre>&lt;style&gt;
+    @import 'vue-route-timeline/style/vue-route-timeline.scss';
+&lt;/style&gt;</pre>
+        </code>
         <h4 id="result">The result is a timeline</h4>
         <route-timeline></route-timeline>
     </div>

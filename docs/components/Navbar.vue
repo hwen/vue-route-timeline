@@ -15,7 +15,7 @@
         <v-list>
             <v-list-tile v-for="route in routes" :to="route" :key="route.name" ripple>
                 <v-list-tile-action>
-                    <v-icon fa>{{ route.icon }}</v-icon>
+                    <v-icon dark>{{ route.icon }}</v-icon>
                 </v-list-tile-action>
                 <v-list-tile-content>
                     <v-list-tile-title>{{ route.title }}</v-list-tile-title>

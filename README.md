@@ -27,7 +27,7 @@ import App from './App'; // Load your app
 import router from './router'; // Add your router
 import store from './store'; // Build your vuex store
 
-Vue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router
+Vue.use(timeline.plugin, {store, router}); // Connect timeline to vue, store and router
 
 new Vue({
   el: '#app',
